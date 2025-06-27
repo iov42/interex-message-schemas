@@ -1,0 +1,26 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "",
+    "title": "Channel created",
+    "description": "When a channel is created",
+    "type": "object",
+    "properties": {
+        "originatorId": {
+            "description": "Organisation id that initiated the channel",
+            "type": "string"
+        },
+        "organisationId": {
+            "description": "Organisation id that is connected to the channel",
+            "type": "string"
+        },
+        "channelId": {
+            "description": "The channel id that was created",
+            "type": "string"
+        }
+    },
+	"required": [
+		"originatorId",
+		"organisationId",
+		"channelId"
+	]
+}

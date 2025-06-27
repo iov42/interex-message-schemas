@@ -1,0 +1,16 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "",
+    "title": "Connected",
+    "description": "When two organisations connect",
+    "type": "object",
+    "properties": {
+        "organisationId": {
+            "description": "Organisation id that they connected to",
+            "type": "string"
+        }
+    },
+    "required": [
+        "organisationId"
+    ]
+}

@@ -1,0 +1,26 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "",
+    "title": "Data Type Changed",
+    "description": "Notification that a data type has changed",
+    "type": "object",
+    "properties": {
+        "dataTypeId": {
+            "description": "The id of the data type that has changed",
+            "type": "string"
+        },
+        "setTypeId": {
+            "description": "The id of the data set that has changed",
+            "type": "string"
+        },
+        "operation": {
+            "description": "The operation that was performed",
+            "type": "string"
+        }
+    },
+	"required": [
+		"dataTypeId",
+		"setTypeId",
+		"operation"
+	]
+}

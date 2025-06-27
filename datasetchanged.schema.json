@@ -1,0 +1,51 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "",
+    "title": "Data Set Changed",
+    "description": "Notification that a data set has changed",
+    "type": "object",
+    "properties": {
+        "dataTypeId": {
+            "description": "The id of the data type that has changed",
+            "type": "string"
+        },
+        "setId": {
+            "description": "The id of the data set that has changed",
+            "type": "string"
+        },
+        "description": {
+            "description": "The description of the data set",
+            "type": "string"
+        },
+        "schema": {
+            "description": "The schema of the data set",
+            "type": "string"
+        },
+        "protocol": {
+            "description": "The protocol of the schema of the data set",
+            "type": "string"
+        },
+        "status": {
+            "description": "The status of the data set",
+            "type": "string"
+        },
+        "additions": {
+            "description": "The ids of the records added to the data set",
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "updates": {
+            "description": "The ids of the records updated in the data set",
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        }
+    },
+	"required" : [
+		"dataTypeId",
+		"setId"
+	]
+}

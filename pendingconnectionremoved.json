@@ -1,0 +1,16 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "",
+    "title": "Pending Connection Removed",
+    "description": "When a pending connection is removed by the recipient of the connection request",
+    "type": "object",
+    "properties": {
+        "recipientId": {
+            "description": "Organisation id that received the request",
+            "type": "string"
+        }
+    },
+	"required": [
+		"recipientId"
+	]
+}
